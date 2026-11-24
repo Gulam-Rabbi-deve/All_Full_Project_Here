@@ -1,0 +1,97 @@
+.btn {
+  background-color: aqua;
+  outline: none;
+  transition: 0.4s;
+}
+
+.btn:focus + input {
+  background-color: red;
+}
+
+input {
+  padding: 10px;
+  /* border:3px solid red; */
+  outline: none;
+}
+
+/* input:focus{
+    border:5px solid blue;
+    outline:none
+} */
+
+li:nth-child(even) {
+  background-color: brown;
+}
+
+li:nth-of-type(6) {
+  background-color: rgb(42, 149, 165);
+}
+
+p {
+  background-color: blueviolet;
+}
+
+p:only-child {
+  background-color:;
+}
+
+.div1 {
+  width: 500px;
+  height: 200px;
+  background-color: bisque;
+  background-image: linear-gradient(to right, blue, blueviolet, #ec4899);
+  color: white;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+div{ color:white;}
+div:hover {
+  box-shadow: 2px 2px rgb(103, 89, 100);
+}
+img {
+  width: 70px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.div2 {
+  width: 500px;
+  height: 200px;
+  color: white;
+  background-image: linear-gradient(to right, rgb(230, 20, 223), rgb(8, 102, 253), rgb(9, 247, 84));
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.div3 {
+  width: 500px;
+  height: 200px;
+  background-color: bisque;
+  background-image: linear-gradient(to right, rgb(132, 255, 0), rgb(134, 10, 250), #e6ec485e);
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.div4 {
+  width: 500px;
+  height: 200px;
+  background-color: bisque;
+  background-image: linear-gradient(to right, rgb(132, 0, 255), rgb(226, 110, 43), #48a8ec);
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.div5 {
+  width: 500px;
+  height: 200px;
+  background-color: bisque;
+  background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(43, 226, 159), #6b48ec);
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}

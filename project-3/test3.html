@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=A, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 150px;
+        height: 140px;
+        border-bottom: 5px solid red;
+        /* margin: 50px auto; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        background: #000;
+        border-radius: 50% 50% 0 0;
+      }
+
+      .child {
+        width: 15px;
+        height: 100px;
+        background-color: white;
+        border-top: 14px solid rgb(11, 230, 51);
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .child::after {
+        content: "R";
+        width: 7px;
+        height: 0%;
+        position: absolute;
+        background-color: indigo;
+        bottom: 0;
+        visibility: hidden;
+        color: red;
+        font-size: 15px;
+      }
+      .child:hover::after {
+        transition: 2s;
+        height: 100%;
+        border-top: 14px solid red;
+        border-radius: 20px 20px 0 0;
+        visibility: visible;
+      }
+
+      main {
+        width: 50px;
+        height: 200px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      article {
+        width: 6px;
+        height: 80%;
+        background: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+      }
+
+      .div1 {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+      }
+
+      .div2 {
+        width: 20px;
+        height: 20px;
+        background: rgb(11, 214, 65);
+        border-radius: 50%;
+      }
+
+      .div3 {
+        width: 20px;
+        height: 20px;
+        background: rgb(108, 6, 218);
+        border-radius: 50%;
+      }
+
+      .border {
+        width: 150px;
+        height: 150px;
+        border: 10px solid;
+        border-radius: 50%;
+        border-color: aquamarine red blue orange;
+      }
+
+      .box-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: slategray;
+      }
+
+      .lavel {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        background-color: rgb(11, 11, 12);
+      }
+
+      .lavel div {
+        height: 15px;
+        border-radius: 0 0 10px 10px;
+        background-color: lime;
+      }
+
+      .lv1 {
+        width: 200px;
+      }
+      .lv2 {
+        width: 180px;
+      }
+      .lv3 {
+        width: 160px;
+      }
+      .lv4 {
+        width: 140px;
+      }
+      .lv5 {
+        width: 120px;
+      }
+      .lv6 {
+        width: 100px;
+      }
+      .lv7 {
+        width: 80px;
+      }
+      .lv8 {
+        width: 60px;
+      }
+      .lv9 {
+        width: 40px;
+      }
+      .lv10 {
+        width: 20px;
+      }
+
+      .lv1:hover {
+        transition: 1s;
+        width: calc(200px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv2:hover {
+        transition: 1s;
+        width: calc(180px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv3:hover {
+        transition: 1s;
+        width: calc(160px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv4:hover {
+        transition: 1s;
+        width: calc(140px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv5:hover {
+        transition: 1s;
+        width: calc(120px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv6:hover {
+        transition: 1s;
+        width: calc(100px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv7:hover {
+        transition: 1s;
+        width: calc(80px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv8:hover {
+        transition: 1s;
+        width: calc(60px + 10px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv9:hover {
+        transition: 1s;
+        width: calc(40px + 5px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+      .lv10:hover {
+        transition: 1s;
+        width: calc(20px + 5px);
+        background-image: linear-gradient(to bottom, rgb(246, 8, 167),aqua,green);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-div">
+      <div class="container">
+        <div class="child1 child"></div>
+        <div class="child2 child"></div>
+        <div class="child3 child"></div>
+        <div class="child4 child"></div>
+      </div>
+      <span> <div class="border"></div></span>
+      <main>
+        <article>
+          <div class="div1"></div>
+          <div class="div2"></div>
+          <div class="div3"></div>
+        </article>
+      </main>
+      <div class="lavel">
+        <div class="lv1"></div>
+        <div class="lv2"></div>
+        <div class="lv3"></div>
+        <div class="lv4"></div>
+        <div class="lv5"></div>
+        <div class="lv6"></div>
+        <div class="lv7"></div>
+        <div class="lv8"></div>
+        <div class="lv9"></div>
+        <div class="lv10"></div>
+      </div>
+    </div>
+  </body>
+</html>
